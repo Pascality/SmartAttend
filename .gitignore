@@ -1,0 +1,48 @@
+# Node.js
+**/node_modules/
+**/dist/
+**/build/
+
+# Python
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+env/
+venv.bak/
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Java/Maven
+**/target/
+!.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
+.mtl.xml
+.classpath
+.project
+.settings/
+
+# environment variables
+**/.env*
+! .env.example
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.dockerignore
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# User specific scripts
+start-system.bat
