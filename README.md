@@ -1,14 +1,14 @@
-# 🎓 SmartAttend
+#  SmartAttend
 
 A full-stack facial recognition attendance system built with **React**, **Spring Boot**, **Python (FastAPI)**, and **MySQL**.
 
 ---
 
-## 🚀 Setup & Running (Windows)
+##  Setup & Running (Windows)
 
 ### 1. Requirements
 *   **Java 21** + **Maven**
-*   **Node.js 20+**
+*   **Node.js 20+** 
 *   **Python 3.11**
 *   **MySQL 8.0** (Create a database named `smart_attendance`)
 
@@ -31,7 +31,7 @@ start-system.bat
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 *   `ai-service/`: Python service for face encoding and matching.
 *   `attendance-backend/`: Spring Boot REST API and business logic.
 *   `attendance-frontend/`: Vite-powered React dashboard.
