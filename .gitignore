@@ -27,9 +27,9 @@ htmlcov/
 .project
 .settings/
 
-# environment variables
-**/.env*
-! .env.example
+# Environment variables (keep .env.example, ignore actual .env)
+.env
+!.env.example
 
 # IDEs
 .vscode/
@@ -37,12 +37,6 @@ htmlcov/
 *.swp
 *.swo
 
-# Docker
-.dockerignore
-
 # OS files
 Thumbs.db
 .DS_Store
-
-# User specific scripts
-start-system.bat

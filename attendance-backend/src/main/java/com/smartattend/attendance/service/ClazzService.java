@@ -8,6 +8,7 @@ import com.smartattend.attendance.model.Teacher;
 import com.smartattend.attendance.repository.ClazzRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.SecureRandom;
 import java.util.List;
@@ -58,6 +59,7 @@ public class ClazzService {
      * Delete a class. Only the owning teacher can delete it.
      * Clears enrollments and cascades to sessions/records.
      */
+    @Transactional
     public void deleteClass(Long classId, Long teacherId) {
         Clazz clazz = getClazzEntity(classId);
         if (!clazz.getTeacher().getId().equals(teacherId)) {
