@@ -41,6 +41,7 @@ public class ClazzService {
     /**
      * Get all classes belonging to a teacher.
      */
+    @Transactional(readOnly = true)
     public List<ClassResponse> getClassesByTeacher(Long teacherId) {
         return clazzRepository.findAllByTeacherId(teacherId).stream()
                 .map(AttendanceMapper::toClassResponse)
