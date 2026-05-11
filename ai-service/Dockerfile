@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY requirements.txt .
+# Limit compilation to 1 thread to prevent Render from running out of memory (8GB)
+ENV CMAKE_BUILD_PARALLEL_LEVEL=1
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
