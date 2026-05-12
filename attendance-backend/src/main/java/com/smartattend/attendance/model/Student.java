@@ -23,7 +23,7 @@ public class Student {
     @Column(nullable = false, unique = true)
     private String rollNumber;
 
-    @Column(columnDefinition = "LONGTEXT")
+    @Column(columnDefinition = "TEXT")
     private String faceEncoding; // 128-d vector stored as JSON string
 
     @ManyToMany(mappedBy = "enrolledStudents")
